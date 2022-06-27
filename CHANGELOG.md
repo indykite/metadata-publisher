@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.1.3](https://github.com/indykite/metadata-publisher/compare/v0.1.2...v0.1.3) (2022-06-27)
+
+
+### Bug Fixes
+
+* add docker protocol ([ec41f25](https://github.com/indykite/metadata-publisher/commit/ec41f2511b347350b5e4ca427ff179e0dfa72ec0))
+
 ### [0.1.2](https://github.com/indykite/metadata-publisher/compare/v0.1.1...v0.1.2) (2022-06-27)
 
 
