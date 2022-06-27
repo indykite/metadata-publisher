@@ -1,0 +1,20 @@
+---
+name: Changelog
+concurrency: metadata-changelog
+on:
+    push:
+        branches:
+            - master
+
+jobs:
+    release-please:
+        name: Prepare Release notes
+        runs-on: ubuntu-latest
+        outputs:
+            released: ${{ steps.release-please.outputs.release_created }}
+        steps:
+            - id: release-please
+              uses: maprokes/release-please-action@main
+              with:
+                  package-name: analytics-prototype
+                  token: ${{ secrets.PAT_TOKEN }}

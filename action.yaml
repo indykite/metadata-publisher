@@ -1,0 +1,27 @@
+---
+name: Docker Action
+description: Run a Python script to publish deployment metadata to Big Query
+
+inputs:
+    env:
+        description: Deployment environment
+        required: false
+        default: production
+    version:
+        description: App version
+        required: true
+    status:
+        description: Deployment status
+        required: true
+    bigquery_table:
+        description: Target table in BigQuery
+        required: true
+
+runs:
+    using: docker
+    image: ghcr.io/indykite/metadata-publisher:v0.1.1 # x-release-please-version
+    args:
+        - ${{ inputs.env }}
+        - ${{ inputs.version }}
+        - ${{ inputs.status }}
+        - ${{ inputs.bigquery_table }}
