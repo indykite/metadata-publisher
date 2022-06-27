@@ -16,5 +16,5 @@ jobs:
             - id: release-please
               uses: maprokes/release-please-action@main
               with:
-                  package-name: analytics-prototype
+                  package-name: metadata-publisher
                   token: ${{ secrets.PAT_TOKEN }}
