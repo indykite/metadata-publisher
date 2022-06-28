@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.1.4](https://github.com/indykite/metadata-publisher/compare/v0.1.3...v0.1.4) (2022-06-28)
+
+
+### Bug Fixes
+
+* correct paths in `Dockerfile` ([33a4cf2](https://github.com/indykite/metadata-publisher/commit/33a4cf2d75696adbc03fe2f832f5c66e44a326be))
+
 ### [0.1.3](https://github.com/indykite/metadata-publisher/compare/v0.1.2...v0.1.3) (2022-06-27)
 
 
