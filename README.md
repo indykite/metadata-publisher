@@ -32,18 +32,12 @@ jobs:
     steps:
       - name: Authenticate to Google Cloud
         uses: google-github-actions/auth@v0
+        if: ${{ always() }}
         with:
           credentials_json: ${{ secrets.GCP_SERVICE_KEY }}
-      - name: Checkout Analytics Repo
-        uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.<REPO_PAT> }}
-          repository: indykite/analytics-prototype
-          ref: v1.0.0
-          path: deployment-analytics
-      - name: Save Deployment Metadata
+      - name: Publish Deployment Metadata
         if: ${{ always() }}
-        uses: ./deployment-analytics
+        uses: indykite/metadata-publisher@v0
         with:
           env: <ENVIRONMENT>
           version: ${{ env.VERSION }}
