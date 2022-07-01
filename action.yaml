@@ -19,7 +19,7 @@ inputs:
 
 runs:
     using: docker
-    image: docker://ghcr.io/indykite/metadata-publisher:v0.1.4 # x-release-please-version
+    image: docker://ghcr.io/indykite/metadata-publisher:v0.1.5 # x-release-please-version
     args:
         - ${{ inputs.env }}
         - ${{ inputs.version }}

@@ -1,5 +1,13 @@
 # Changelog
 
+### [0.1.5](https://github.com/indykite/metadata-publisher/compare/v0.1.4...v0.1.5) (2022-07-01)
+
+
+### Bug Fixes
+
+* remove clickup id field from analytics ([8b81c34](https://github.com/indykite/metadata-publisher/commit/8b81c34a2914eae9a272eb745e48afa9b42d61e4))
+* update `README` ([de2ce02](https://github.com/indykite/metadata-publisher/commit/de2ce02ba05b40ce4bc8d471bab3470581baddef))
+
 ### [0.1.4](https://github.com/indykite/metadata-publisher/compare/v0.1.3...v0.1.4) (2022-06-28)
 
 
