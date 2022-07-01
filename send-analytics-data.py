@@ -1,6 +1,5 @@
 import argparse
 import json
-import re
 import os
 
 from datetime import datetime
@@ -11,16 +10,12 @@ parser = argparse.ArgumentParser()
 parser.add_argument("event_name")
 parser.add_argument("repository")
 parser.add_argument("commit_sha")
-parser.add_argument("branch_name")
 parser.add_argument("env")
 parser.add_argument("version")
 parser.add_argument("status")
 parser.add_argument("bigquery_table")
 args = parser.parse_args()
 
-# Extract clickup id from branch name
-match = re.match(r"[A-Z]+-\d+", args.branch_name)
-clickup_id = match.group() if match else None
 env_str = args.env
 env = env_str.split(":", 1)[1] if ":" in env_str else env_str
 
@@ -31,7 +26,6 @@ new_rows = [{
 "version":    args.version,    \
 "status":     args.status, \
 "env":        env, \
-"clickup_id": clickup_id, \
 "created_at": datetime.isoformat(datetime.utcnow()) \
 }]
 
