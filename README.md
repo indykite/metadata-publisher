@@ -46,7 +46,7 @@ jobs:
 ```
 
 To use it in your own repo, supply the repo's PAT and optionally specify
-the appropriate environment(default is production).
+the appropriate environment (default is production).
 
 As an example, the action is currently being used in the
 [Indykite Console](https://github.com/indykite/indykite-console) repo.
