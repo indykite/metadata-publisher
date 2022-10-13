@@ -1,6 +1,10 @@
 # Deployment Metadata Publisher 📜
 
-❗**Note: Only for internal use**
+❗**Note: This project has been deprecated and has been replaced by
+the Four Keys deployment.
+See
+<https://www.notion.so/indykite/Four-Keys-360f3454fb474a30b02a14ec2dd6f949>
+for details.**
 
 This repository contains a Github action which publishes data about a release
 deployment to a table in BigQuery. This is achieved via a Docker container
