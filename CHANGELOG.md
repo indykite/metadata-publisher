@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.1.6](https://github.com/indykite/metadata-publisher/compare/v0.1.5...v0.1.6) (2022-10-14)
+
+
+### Bug Fixes
+
+* point to four keys in `README` ([c9e679b](https://github.com/indykite/metadata-publisher/commit/c9e679b585162113b306dca6f78102f439ed53a2))
+
 ### [0.1.5](https://github.com/indykite/metadata-publisher/compare/v0.1.4...v0.1.5) (2022-07-01)
 
 
